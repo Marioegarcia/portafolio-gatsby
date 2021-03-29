@@ -22,7 +22,7 @@ const AboutMe = () => {
     <>
       <div>
         <SEO
-          title="About"
+          title="Sobre mí"
           description={description}
           path=""
           keywords={['Mario', 'Ezequiel', 'Garcia','Huerta', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'MongoDB','Ant-desig']}

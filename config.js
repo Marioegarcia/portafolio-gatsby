@@ -9,6 +9,7 @@ module.exports = {
   disqusScript: process.env.DISQUS_SCRIPT || 'https://rolwinreevan.disqus.com/embed.js',
   pages: {
     home: '/',
+    experiencia: 'experiencia',
     blog: 'blog',
     contact: 'contact',
     resume: 'resume',

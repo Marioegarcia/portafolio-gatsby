@@ -5,6 +5,7 @@ const AboutTile = (props) => {
   const {
     img, textH4, textH3, alt, height, width,
   } = props;
+  
   return (
     <div className={style.aboutTile}>
       <div className={style.aboutBlock}>

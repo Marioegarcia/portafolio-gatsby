@@ -5,17 +5,15 @@ import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import ContactForm from '../../components/PageFragments/ContactForm';
 import SEO from '../../components/Seo';
 
+
 const Contact = () => (
   <Layout className="outerPadding">
     <Layout className="container">
       <SEO
         title="Contact"
-        description="Hello folks Rolwin here. You can contact me through the contact form on this page.
-                    Please feel free to contact me, don't be shy guys, just remember Rolwin is always open to talk about web
-                    technologies especially Javascript techstacks. Currently I'm a part of Gatsby organization on github.
-                    Find me on github - rolwin100."
+        description="Hola mi nombre es Mario, estos son mis datos de contacto, soy un programador jr, actualmente estudio el stack MERN."
         path="/contact"
-        keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+        keywords={['Mario', 'Ezequiel', 'Garcia','Huerta', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
       />
       <Header />
       <SidebarWrapper>

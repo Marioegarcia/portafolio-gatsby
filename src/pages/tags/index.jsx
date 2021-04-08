@@ -46,58 +46,58 @@ const Tags = ({ data }) => {
   );
 };
 
-Tags.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-            }).isRequired,
-          }).isRequired,
-        }).isRequired,
-      ).isRequired,
-    }).isRequired,
-    allFile: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            childImageSharp: PropTypes.shape({
-              fluid: PropTypes.object.isRequired,
-            }).isRequired,
-          }).isRequired,
-        }).isRequired,
-      ).isRequired,
-    }).isRequired,
-  }).isRequired,
-};
+// Tags.propTypes = {
+//   data: PropTypes.shape({
+//     allMarkdownRemark: PropTypes.shape({
+//       edges: PropTypes.arrayOf(
+//         PropTypes.shape({
+//           node: PropTypes.shape({
+//             frontmatter: PropTypes.shape({
+//               tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+//             }).isRequired,
+//           }).isRequired,
+//         }).isRequired,
+//       ).isRequired,
+//     }).isRequired,
+//     allFile: PropTypes.shape({
+//       edges: PropTypes.arrayOf(
+//         PropTypes.shape({
+//           node: PropTypes.shape({
+//             name: PropTypes.string.isRequired,
+//             childImageSharp: PropTypes.shape({
+//               fluid: PropTypes.object.isRequired,
+//             }).isRequired,
+//           }).isRequired,
+//         }).isRequired,
+//       ).isRequired,
+//     }).isRequired,
+//   }).isRequired,
+// };
 
-export const query = graphql`
-  {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index.md$/" } }) {
-      edges {
-        node {
-          frontmatter {
-            tags
-          }
-        }
-      }
-    }
-    allFile(filter: { relativeDirectory: { eq: "tags" } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   {
+//     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index.md$/" } }) {
+//       edges {
+//         node {
+//           frontmatter {
+//             tags
+//           }
+//         }
+//       }
+//     }
+//     allFile(filter: { relativeDirectory: { eq: "tags" } }) {
+//       edges {
+//         node {
+//           name
+//           childImageSharp {
+//             fluid(maxWidth: 400) {
+//               ...GatsbyImageSharpFluid_tracedSVG
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
 export default Tags;

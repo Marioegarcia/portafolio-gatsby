@@ -27,7 +27,7 @@ const AboutMe = () => {
           path=""
           keywords={['Mario', 'Ezequiel', 'Garcia','Huerta', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'MongoDB','Ant-desig']}
         />
-        <h1 className="titleSeparate">About Me</h1>
+        <h1 className="titleSeparate">Acerca de mi</h1>
         <p dangerouslySetInnerHTML={domHtml(pageText.paraOne)} />
         
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />

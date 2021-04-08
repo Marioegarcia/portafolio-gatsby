@@ -1,5 +1,5 @@
 import React from 'react'
-import { Timeline,Col } from 'antd';
+import { Timeline } from 'antd';
 
 export default () =>{
     return (

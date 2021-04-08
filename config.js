@@ -14,6 +14,7 @@ module.exports = {
     contact: 'contact',
     resume: 'resume',
     tag: 'tags',
+    
   },
   social: {
     github: 'https://github.com/Marioegarcia',

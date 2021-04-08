@@ -9,15 +9,16 @@ import { useWindowSize } from '../../../utils/hooks';
 export default () => {
   const [menu, setMenu] = useState(false);
 
-  const [width] = useWindowSize();
+   const [width] = useWindowSize();
   const toggleMenu = () => {
-    if (width !== 0 && width <= 768) {
+    if (1080 !== 0 && 1080 <= 768) {
       if (menu) {
         setMenu(false);
       } else {
         setMenu(true);
       }
     }
+    
   };
   return (
     <>
@@ -46,16 +47,13 @@ export default () => {
                 Experiencia
               </Link>
             </li>
+      
             <li className={style.navItem}>
               <Link to="/blog" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                Portafolio
+                Blog
               </Link>
             </li>
-            <li className={style.navItem}>
-              <Link to="/tags" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                Tags
-              </Link>
-            </li>
+            
             <li className={style.navItem}>
               <Link to="/resume" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Resume

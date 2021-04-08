@@ -13,7 +13,7 @@ const Experiencia = () => (
       <SEO
         title="Experiencia"
         description="Hola aqui veran toda mi experiencia laboral y mi historia educativa."
-        path="/contact"
+        path="/experiencia"
         keywords={['Mario', 'Ezequiel', 'Garcia','Huerta', 'empleos', 'Laboral', 'escuela', 'estudios']}
       />
       <Header />

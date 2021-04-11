@@ -3,7 +3,7 @@ title: Socket Chat
 tags: [ javascript, mongo, typescript ]
 date: 2021-03-30T05:25:44.226Z
 path: blog/socket-chat
-cover: ./principal2.png
+cover: ./principal.png
 excerpt: Sala de chat creada con node js y socket en el backend y react js en el frontend.  
 ---
 .

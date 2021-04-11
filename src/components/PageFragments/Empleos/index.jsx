@@ -74,7 +74,7 @@ export default () =>{
                 Manejo de Efectivo
                 </li>
                 <li>
-                Control de inventario
+                Manejo de personal
                 </li>
                 <li>
                 Control de inventario

@@ -11,7 +11,7 @@ export default () => {
 
    const [width] = useWindowSize();
   const toggleMenu = () => {
-    if (1080 !== 0 && 1080 <= 768) {
+    if (width !== 0 && width <= 768) {
       if (menu) {
         setMenu(false);
       } else {

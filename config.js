@@ -10,10 +10,10 @@ module.exports = {
   pages: {
     home: '/',
     experiencia: 'experiencia',
-    blog: 'blog',
+    proyectos: 'proyectos',
     contact: 'contact',
     resume: 'resume',
-    
+       
     
   },
   social: {

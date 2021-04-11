@@ -13,15 +13,13 @@ const Blog = ({ data }) => (
     <Layout className="container">
       <Header />
       <SEO
-        title="Blog"
-        description="I like blogging about various web technologies and other stuff related to
-          javascript and other trends like graphql, prisma etc. This blog expresses my views of various technologies
-          and scenarios I have come across in realtime."
-        path="blog"
+        title="Proyectos"
+        description="Proyectos personales que he desarrollado."
+        path="proyectos"
       />
       <SidebarWrapper>
         <div className="marginTopTitle">
-          <h1 className="titleSeparate">Blog</h1>
+          <h1 className="titleSeparate">Proyectos</h1>
         </div>
         <Row gutter={[20, 20]}>
           {

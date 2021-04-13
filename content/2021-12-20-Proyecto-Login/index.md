@@ -8,11 +8,9 @@ excerpt: Proximamente...
 ---
 
 
-Texto
-texto
-texto
 
-## Temas de la sección:
+
+## Proximamente:
 
 Consumo de APIs
 

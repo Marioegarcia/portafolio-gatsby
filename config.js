@@ -13,6 +13,7 @@ module.exports = {
     proyectos: 'proyectos',
     contact: 'contact',
     resume: 'resume',
+    blog:'blog'
        
     
   },

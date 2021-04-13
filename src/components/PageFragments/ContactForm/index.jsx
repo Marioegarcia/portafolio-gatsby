@@ -11,7 +11,7 @@ import Config from '../../../../config';
 //   },
 // };
 const {
-  facebook, github, instagram,
+  facebook, github, instagram,linkedin
 } = Config.social;
 
 export default () => {
@@ -25,17 +25,46 @@ export default () => {
         bordered
         column={{ xxl: 1, xl: 1, lg: 1, md: 3, sm: 2, xs: 1 }}
       >
-        <Descriptions.Item label="Correo"><a  href="mailto:marioptrova@gmail.com" ><FA name="far fa-envelope" />marioptrova@gmail.com</a></Descriptions.Item>
-        <Descriptions.Item label="Numero Celular"><a href="tel:+529141272333"><FA name="fas fa-phone-square" />+52 914 127 2333</a></Descriptions.Item>
-        <Descriptions.Item label="GitHub"> <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" />GitHub</a></Descriptions.Item>
-        <Descriptions.Item label="Facebook"> 
-        <a href={facebook} target="_blank" label="button" rel="noopener noreferrer"><FA name="facebook-f" />
+        <Descriptions.Item 
+        label={<a  href="mailto:marioptrova@gmail.com" ><FA name="far fa-envelope" />marioptrova@gmail.com</a>}>
+        </Descriptions.Item>
+
+        <Descriptions.Item 
+        label={<a href="tel:+529141272333"><FA name="fas fa-phone-square" />+52 914 127 2333</a>}>
+        </Descriptions.Item>
+        
+        <Descriptions.Item 
+        label={<a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" />GitHub</a>}>
+        </Descriptions.Item>
+
+        <Descriptions.Item 
+        label={
+          
+          <a href={linkedin} target="_blank" label="button" rel="noopener noreferrer">
+           <FA name="linkedin" /> Linkedin
+          </a>
+        }
+        >
+        
+          
+        </Descriptions.Item>
+       
+        <Descriptions.Item 
+        label={
+        <a href={facebook} target="_blank" label="button" rel="noopener noreferrer">
+          <FA name="facebook-f" />
         Facebook
         </a>
+        }> 
+        
        </Descriptions.Item>
-        <Descriptions.Item label="Instagram"><a href={instagram} target="_blank" label="button" rel="noopener noreferrer"><FA name="instagram" />
+        <Descriptions.Item 
+        label={
+        <a href={instagram} target="_blank" label="button" rel="noopener noreferrer">
+        <FA name="instagram" />
         Instagram
-        </a></Descriptions.Item>
+        </a>}>
+        </Descriptions.Item>
        
 
       </Descriptions>

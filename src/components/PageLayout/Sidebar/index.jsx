@@ -12,7 +12,7 @@ import Config from '../../../../config';
 
 const { Content } = Layout;
 const {
-  facebook, github, instagram,
+  facebook, github, instagram,linkedin
 } = Config.social;
 
 const DomContent = () => (
@@ -29,7 +29,9 @@ const DomContent = () => (
       <div className={`${style.badge} ${style.badgeGray}`}>Programador</div>
       <div className="centerAlign box">
         <a href={facebook} target="_blank" label="button" rel="noopener noreferrer"><FA name="facebook-f" /></a>
-       
+        <a href={linkedin} target="_blank" label="button" rel="noopener noreferrer">
+           <FA name="linkedin" />
+        </a>
         <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" /></a>
         <a href={instagram} target="_blank" label="button" rel="noopener noreferrer"><FA name="instagram" /></a>
       </div>
@@ -39,7 +41,7 @@ const DomContent = () => (
             <FeatherIcon size="19" icon="calendar" />
             {' '}
           </span>
-&nbsp; &nbsp; 01 Diciembre,1992
+&nbsp; &nbsp; 01 Diciembre 1992
         </li>
         <li className={`${style.contactBlockItem}`}>
           <span><FeatherIcon size="19" icon="map-pin" /></span>

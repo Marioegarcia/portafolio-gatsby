@@ -32,8 +32,8 @@ const AboutMe = () => {
         
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
-      <Row gutter={[20, 20]}>
-        <Col xs={24} sm={24} md={12} lg={12}>
+      <Row gutter={[8, 8]}>
+        <Col xs={24} sm={24} md={24} lg={12}>
           <AboutTile
             img="location.png"
             height={60}
@@ -43,7 +43,7 @@ const AboutMe = () => {
           />
         </Col>
     
-        <Col xs={24} sm={24} md={12} lg={12}>
+        <Col xs={24} sm={24} md={24} lg={12}>
           <AboutTile
             img="meeting.png"
             alt="trabajo en equipo"
@@ -51,7 +51,7 @@ const AboutMe = () => {
             textH3="para cumplir los objetivos"
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={12}>
+        <Col xs={24} sm={24} md={24} lg={12}>
           <AboutTile
             img="cinema.png"
             alt="cinema"
@@ -59,7 +59,7 @@ const AboutMe = () => {
             textH3="es llegar al cine"
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={12}>
+        <Col xs={24} sm={24} md={24} lg={12}>
           <AboutTile
             img="web.png"
             alt="web image"

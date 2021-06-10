@@ -20,11 +20,16 @@ const DomContent = () => (
     <div className={style.profileAvatar} />
     <div className={`${style.name} centerAlign`}>
       <div className={`${style.boxName} centerAlign`}>
-        <h2>
+      <h2>
+          Mario Ezequiel
+          {' '}
+          <span>Garcia Huerta</span>
+        </h2>
+        {/* <h2>
          <span> Mario Ezequiel
           {' '}
          Garcia Huerta </span>
-        </h2>
+        </h2> */}
       </div>
       <div className={`${style.badge} ${style.badgeGray}`}>Programador</div>
       <div className="centerAlign box">
@@ -90,10 +95,10 @@ const Sidebar = (props) => {
       <Layout>
         <Content className={`${style.content} ${style.background}`}>
           <Row>
-            <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
+            <Col sm={24} md={12} lg={8} className={style.sidebarContent}>
               { domContent }
             </Col>
-            <Col sm={24} md={15} lg={18}>
+            <Col sm={24} md={12} lg={16}>
               <Layout className={`${style.background} ${style.boxContent} borderRadiusSection`}>
                 { children }
               </Layout>

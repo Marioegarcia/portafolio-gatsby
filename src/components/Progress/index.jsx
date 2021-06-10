@@ -6,11 +6,25 @@ import AntD from '../../images/antd.svg';
 import Node from '../../images/Node.js.png';
 import Python from '../../images/python.png';
 import MongoDB from '../../images/mongo.png';
-
+import Html from '../../images/html5.png';
+import css from '../../images/css.png';
+import sass from '../../images/sass.png';
 const data = [
+  {
+    title: 'HTML',
+    src: Html,
+  },
+  {
+    title: 'Css',
+    src: css,
+  },
   {
     title: 'JavaScript',
     src: JS,
+  },
+  {
+    title: 'SASS',
+    src: sass,
   },
   {
     title:'React JS',
@@ -43,13 +57,13 @@ const { Meta } = Card;
 
 
 const ProgressBar = (props) => {
-  const { text, percent } = props;
+
   return (
-    <div style={{ marginTop: '20px' }}>
+    <div >
       <div>
       <List
         grid={{
-          gutter: 16,
+          gutter: 8,
           xs: 1,
           sm: 1,
           md: 1,
@@ -77,7 +91,7 @@ const { Title } = Typography;
 function TarjetaSkills(props) {
   
   const item = props.item;
-  console.log(item);
+  
 
   return (
     <>
@@ -89,10 +103,10 @@ function TarjetaSkills(props) {
           size={{
             xs: 80,
             sm: 80,
-            md: 80,
-            lg: 80,
-            xl: 80,
-            xxl: 100,
+            md: 50,
+            lg: 50,
+            xl: 50,
+            xxl: 50,
           }}
           src={item.src}
           />

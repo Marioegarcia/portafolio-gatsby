@@ -21,11 +21,8 @@ const Experiencia = () => (
         <div className="marginTopTitle">
           <h1 className="titleSeparate">Experiencia</h1>
         </div>
-        <Row gutter={[40, 20]}>
-          <Col sm={24} md={24} lg={12}>
-            <Empleos/>
-          </Col>
-          <Col sm={24} md={24} lg={12}>
+        <Row>
+          <Col sm={24} md={24} lg={24}>
             <Estudios/>
           </Col>
           

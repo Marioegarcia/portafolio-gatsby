@@ -9,6 +9,7 @@ import MongoDB from '../../images/mongo.png';
 import Html from '../../images/html5.png';
 import css from '../../images/css.png';
 import sass from '../../images/sass.png';
+
 const data = [
   {
     title: 'HTML',
@@ -56,7 +57,7 @@ const data = [
 const { Meta } = Card;
 
 
-const ProgressBar = (props) => {
+const ProgressBar = () => {
 
   return (
     <div >
@@ -130,19 +131,3 @@ function TarjetaSkills(props) {
   )
 }
 
-// <Progress
-// percent={percent || 0}
-// strokeWidth={22}
-// status="active"
-// />
-
-// </div>
-// <div style={{
-// position: 'absolute',
-// marginTop: '-55px',
-// marginLeft: '90px',
-// color: 'red',
-// fontSize: '22px',
-// }}
-// >
-// <span>{ text || '' }</span>
